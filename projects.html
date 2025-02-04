@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Mouad Ait Khouya</title>
+  <link rel="stylesheet" href="styles/style.css"> <!-- Link to your CSS -->
+  <style>
+    /* Section Styling */
+    #projects {
+      padding: 50px 20px;
+      background-color: #f9f9f9;
+    }
+
+    #projects h2 {
+      text-align: center;
+      font-size: 2.5em;
+      color: #2c3e50;
+      margin-bottom: 40px;
+    }
+
+    .project {
+      background-color: white;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .project:hover {
+      transform: scale(1.05);
+    }
+
+    .project-image {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-bottom: 2px solid #3498db;
+    }
+
+    .project-content {
+      padding: 20px;
+    }
+
+    .project h3 {
+      font-size: 2em;
+      color: #3498db;
+      margin-bottom: 10px;
+    }
+
+    .project p {
+      font-size: 1.1em;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .project ul {
+      list-style-type: none;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    .project ul li {
+      font-size: 1.1em;
+      color: #333;
+    }
+
+    .project a {
+      font-size: 1.1em;
+      color: #3498db;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .project a:hover {
+      color: #2980b9;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .project h3 {
+        font-size: 1.8em;
+      }
+
+      .project p, .project ul li, .project a {
+        font-size: 1em;
+      }
+
+      .project-image {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section id="projects" class="fade">
+    <h2>Projects</h2>
+
+    <!-- Flight Delay Prediction Project -->
+    <div class="project">
+      <img src="assets/flight-delay.png" alt="Flight Delay Prediction" class="project-image">
+      <div class="project-content">
+        <h3>Flight Delay Prediction Model</h3>
+        <p><strong>Description:</strong> Built a tree-based machine learning model to predict whether a flight will be delayed by 15 minutes or more. The model was trained on 10 million flight records from the USA.</p>
+        <p><strong>Key Features:</strong></p>
+        <ul>
+          <li>Tools: Python, Scikit-learn, Pandas, Matplotlib</li>
+          <li>Model: Random Forest, XGBoost</li>
+        </ul>
+        <p><strong>Links:</strong> 
+          <a href="https://github.com/mouadsifaw/Flight_Status_Predictor" target="_blank">GitHub</a> | 
+          <a href="https://flight-status-predictor-app-z2rwbh5nutjv9nrvhhuln3.streamlit.app/" target="_blank">Streamlit Cloud</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- To-Do List App (CS50) -->
+    <div class="project">
+      <img src="assets/todo-app.png" alt="To-Do List App" class="project-image">
+      <div class="project-content">
+        <h3>To-Do List App (CS50 Project)</h3>
+        <p><strong>Description:</strong> A simple to-do list app built as part of the CS50 Python Certification course.</p>
+        <p><strong>Key Features:</strong></p>
+        <ul>
+          <li>Tools: Python, Flask</li>
+          <li>Features: Add, update, and delete tasks</li>
+        </ul>
+        <p><strong>Links:</strong> 
+          <a href="https://github.com/mouadsifaw/todo-list-app" target="_blank">GitHub</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Flight Delay Tableau Story -->
+    <div class="project">
+      <img src="assets/tableau-story.png" alt="Flight Delay Tableau Story" class="project-image">
+      <div class="project-content">
+        <h3>Flight Delay Analysis - Tableau Story</h3>
+        <p><strong>Description:</strong> Created a Tableau story to visualize flight delays using the same dataset from my machine learning project.</p>
+        <p><strong>Key Features:</strong></p>
+        <ul>
+          <li>Tools: Tableau</li>
+          <li>Insights: Flight delay trends across time, airlines, and airports</li>
+        </ul>
+        <p><strong>Links:</strong> 
+          <a href="https://public.tableau.com/app/profile/mouad.khouya/viz/shared/FKFT6K9Y9" target="_blank">View on Tableau Public</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Student Database App (SQL + Flask) -->
+    <div class="project">
+      <img src="assets/student-db.png" alt="Student Database App" class="project-image">
+      <div class="project-content">
+        <h3>Student Management System</h3>
+        <p><strong>Description:</strong> Built a Flask-based student management system that uses a MySQL database.</p>
+        <p><strong>Key Features:</strong></p>
+        <ul>
+          <li>Tools: Python, Flask, MySQL</li>
+          <li>Features: Add, update, delete student records</li>
+        </ul>
+        <p><strong>Links:</strong> 
+          <a href="https://github.com/mouadsifaw/student-management-system" target="_blank">GitHub</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Library Management System (Streamlit + MySQL) -->
+    <div class="project">
+      <img src="assets/library-system.png" alt="Library Management System" class="project-image">
+      <div class="project-content">
+        <h3>Library Management System</h3>
+        <p><strong>Description:</strong> Built a Library Management System using Streamlit and MySQL.</p>
+        <p><strong>Key Features:</strong></p>
+        <ul>
+          <li>Tools: Python, Streamlit, MySQL</li>
+          <li>Features: Borrow, return books, track overdue books</li>
+        </ul>
+        <p><strong>Links:</strong> 
+          <a href="https://github.com/mouadsifaw/LibraryDash" target="_blank">GitHub</a>
+        </p>
+      </div>
+    </div>
+
+  </section>
+</body>
+</html>
